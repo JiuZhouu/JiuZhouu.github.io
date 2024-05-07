@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="供复习面试时查漏补缺目前已涵盖内容：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图形学概念">
+<meta property="og:url" content="http://example.com/2024/05/07/%E5%9B%BE%E5%BD%A2%E5%AD%A6%E6%A6%82%E5%BF%B5/index.html">
+<meta property="og:site_name" content="个人记录">
+<meta property="og:description" content="供复习面试时查漏补缺目前已涵盖内容：">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-05-07T08:10:04.000Z">
+<meta property="article:modified_time" content="2024-05-07T11:09:46.480Z">
+<meta property="article:author" content="JiuZhouu">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/2024/05/07/图形学概念/"/>
+
+
+
+
+
+  <title>图形学概念 | 个人记录</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">个人记录</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/05/07/%E5%9B%BE%E5%BD%A2%E5%AD%A6%E6%A6%82%E5%BF%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/custom/jiuzhou.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">图形学概念</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-07T16:10:04+08:00">
+                2024-05-07
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2024-05-07T19:09:46+08:00">
+                2024-05-07
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<p>供复习面试时查漏补缺<br>目前已涵盖内容：</p>
+<span id="more"></span>
+<p>BRDF和渲染方程<br>BRDF(Bidirectional Reflectance Distribution Function)，译作双向反射分布函数，是一个用来描述物体表面如何反射光线的方程，表示了当给定一条入射光的时候，某一条特定的出射光线的性质是怎么样的。它的精确定义是出射光辐射率(Radiance)的微分和入射光辐照度(Irradiance)的微分之比。</p>
+<p>PBR<br><a href="https://link.zhihu.com/?target=https://learnopengl-cn.github.io/07%2520PBR/01%2520Theory/">理论 - LearnOpenGL CN</a><br>材质、光照  </p>
+<p>Phong和Blin-Phong<br>Phong的Specular项 V R Blinn-Phong的Specular项 N * H</p>
+<p>好处：</p>
+<ol>
+<li>半角向量计算比反射向量快</li>
+<li>Phong模型当光源和观察方向在同一方向时cos（R*V） &#x3D; 0 &#x3D;》出错</li>
+</ol>
+<p>怎么计算得到屏幕上某个像素射出去的光线<br>这个功能一般写在camera上，当camera的视口大小改变时，需要重新计算射线的方向<br>逆的MVP  </p>
+<p>pathtracing（重点）<br>-》光源采样 -》 RR -》 降噪（motion vector及其对应问题和优化，三个方面：depth，normal，color）<br><a href="https://link.zhihu.com/?target=https://www.bilibili.com/video/BV1YK4y1T7yY?p=12">GAMES202-高质量实时渲染_哔哩哔哩_bilibiliLecture12-13</a></p>
+<p>SSAO 和 AA<br>SSAO要点：法线贴图、深度贴图 -》 Noise贴图等等<br>MSAA：相比SSAA只是压缩了FS的次数<br>FXAA：后处理 1.通过亮度差计算出边缘位置 2. 通过卷积确认朝向（横向&#x2F;纵向）3.edge search算法 4. blend<br>TAA：（motion vector）将多次采样的过程分布到每一帧当中去，也即每一帧都会采样历史几帧的数据。</p>
+<p>细节包括：<br>抖动（jitter）：在每次采样的时候都进行一些偏移，而非在像素中心点<br>Motion Vector：场景和相机的视角都有可能会发生变动，这就导致某一个像素点在上一帧中并不在当前这个屏幕坐标上。为了获取动态物体的某一个像素在上一帧的对应屏幕空间坐标，我们还需要记录其上一帧的MVP矩阵，来进行重投影（Reprojection）。这样得到的两次屏幕坐标的位移记录下来，我们称之为Motion Vector或者Velocity。这一信息可以顺便用来实现动态模糊。（核心）<br>Ghosting：对于新像素&#x3D;》解决：clamp&#x2F;clip 防止取色差（normal和depth）很大的像素<br>Flickering：抖动 + ghost &#x3D;》 导致历史帧的高光信息被截断，就会导致高光“忽隐忽现”。&#x3D;》解决：记录clamp的信息，对于clamp的数据不作混合 + 滤波减少variance  </p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/479530563">李知青：TAA原理及OpenGL实现</a><br><a href="https://link.zhihu.com/?target=https://docs.google.com/document/d/15z2Vp-24S69jiZnxqSHb9dX-A-o4n3tYiPQOCRkCt5Q/edit%23">TAA实现</a><br>TAA与RTX降噪原理异曲同工  </p>
+<p>延迟渲染<br><a href="https://link.zhihu.com/?target=https://learnopengl-cn.github.io/05%2520Advanced%2520Lighting/08%2520Deferred%2520Shading/">延迟着色法 - LearnOpenGL CN</a><br>三张纹理：GBUFFER ： position+深度， 法线， rgba， PBR材质（可选）<br>优：将光源和物体分开（O（m+n））<br>缺: 本质上相当于把深度测试提前了&#x3D;》MSAA，ALPHA失效  </p>
+<p>纹理环绕与采样 + mipmap<br>Mipmap是什么，为了解决什么问题，摩尔纹怎么产生的，如果不给shader采样层级，怎么知道用哪一层<br>根据纹理采样坐标和距离自动选择适合的Mipmap级别，通常会选择最接近所需分辨率的级别。</p>
+<p>shadow（shadowmap, PCF， PCSS， CSM，VSM）<br>常见问题：<br>抖动：fighting，通过加一个bias解决&#x3D;&gt;自适应偏移：基于斜率计算偏移值<br>锯齿&#x3D;》PCF，计算kernel，算软阴影<br>PCSS：kernel size大小通过计算penumbera（半影区大小）来计算，相似三角形<br>CSM：YOung：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/45673049">Unity实时阴影实现——Cascaded Shadow Mapping</a><br>简单总结：1. 获取相机视锥 2. 构造灯光相机的包围盒 3. 对相机视锥和包围盒分割 4. 生成级联阴影图  </p>
+<p>bounding<br>AABB，树（八叉树，KD树），BVH<br>原理：<a href="https://link.zhihu.com/?target=https://developer.nvidia.com/gpugems/gpugems/part-v-performance-and-practicalities/chapter-29-efficient-occlusion-culling">Chapter 29. Efficient Occlusion Culling</a><br>简单来说就是关闭深度和颜色渲染，先对bounding box进行一次渲染（只计算AABB深度）&#x3D;》得到query result<br>关键在于和bbox相交的操作由CPU-》GPU来计算，多了一个PASS  </p>
+<p>纹理压缩<br>思想：对一个4X4大小的块，取最亮和最暗的俩个像素  </p>
+<p>gamma矫正<br><a href="https://link.zhihu.com/?target=https://learnopengl-cn.github.io/05%2520Advanced%2520Lighting/02%2520Gamma%2520Correction/%23gamma_1">Gamma校正 - LearnOpenGL CN</a><br>人类所感知的亮度恰好和CRT所显示出来相似的指数关系不匹配</p>
+<p>后处理：bloom，tone mapping， color grading，DOF<br>bloom：1. 更具亮度取threshold 2.下采样插值，上采样作卷积<br>Tone Mapping：HDR -》 SDR 函数： Filmic Curve ACES<br>Color Grading ：LUT的 Trick：并不是256x256x256而是16x16x16之后做插值即可  </p>
+<p>坐标系统<br>矩阵（模型，观察，投影），坐标（局部坐标，世界坐标，观察坐标，裁剪坐标，屏幕坐标）<br>VIEW和Projection的推导： <a href="https://link.zhihu.com/?target=https://www.bilibili.com/video/BV1X7411F744?p=4&vd_source=9a22db7e3738a235d12055a2a2285a9e">GAMES101</a>  </p>
+<p>欧拉角，四元数，矩阵<br>欧拉角<br>优点：直观，易插值 缺点：1. 万向节死锁（y轴（pitch）90度时，x和z轴旋转不再有区别） 2. 旋转有次序要求  </p>
+<p>矩阵<br>优点：方便计算 缺点：不适合插值且需要存储空间较大  </p>
+<p>四元数 <a href="https://link.zhihu.com/?target=https://blog.csdn.net/qq_36162042/article/details/120631380">计算机图形学中的四元数</a><br>缺点：不直观</p>
+<p>光栅化如何判断是否再三角形内部<br>A，B，C三个顶点+任何一个平面上的点P<br>AB，BC，CA AP，BP，BC 六个向量<br>AB X AP BC X BP CA X CP 如果都为正或都为负 &#x3D;》 三角形内  </p>
+<p>MT算法（射线与三角形相交）<br>利用重心坐标<br>ray &#x3D; origin + t * direction &#x3D; 相交点<br>求解 t 和相交点&#x3D;》一共4个未知数<br>重心坐标&#x3D;》a + b + c &#x3D; 1&#x3D;&gt; O + t * dir &#x3D; (1 -b -c)x + by + cz;<br>4个未知数变为三个未知数 &#x3D;》 O,dir都是三维向量，三个方程求解三个未知数&#x3D;》克拉默法则  </p>
+<p>PVS（主要作为一种思想）<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/266592981?utm_medium=social&utm_oi=862761551311024128&utm_id=0">HPlus：UE预计算遮挡剔除（PVS）全解析</a><br>简单来说：就是只渲染和加载看的到的zoom    </p>
+<p>Cluster-based Mesh Pipeline<br><a href="https://link.zhihu.com/?target=https://github.com/microsoft/DirectX-Graphics-Samples/blob/master/Samples/Desktop/D3D12MeshShaders/readme.md">microsoft</a><br>优势：1. mesh更加细化，生成的工作交给GPU；2. 每个mesh有自己的BB，裁剪更加精细<br>具体的项目：Meshlet Viewer、Meshlet Instancing、Meshlet Culling、Instancing Culling &amp; Dynamic LOD Selection<br>Nanite：&#x3D;》思想上：增加了LOD  </p>
+<p>全局光照（SH，Lightmap， DDGI（light Probe），IBL（重点））<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YK4y1T7yY?p=8&vd_source=9a22db7e3738a235d12055a2a2285a9e">games202</a>  </p>
+<p>IBL<br><a href="https://link.zhihu.com/?target=https://learnopengl-cn.github.io/07%2520PBR/03%2520IBL/01%2520Diffuse%2520irradiance/">漫反射辐照 - LearnOpenGL CN</a><br>预滤波项-》将环境贴图带入mipmap，用mipmap的不同级别代表粗糙度，这里还涉及到一些hack，比如重要性采样等<br>BRDF项-》用一张LUT来存储-》反映高光部分  </p>
+<p>渲染管线（forward，defered，tile-based，forward+，Cluster-based）  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">for draw in renderPass:</span><br><span class="line">    for primitive in draw:</span><br><span class="line">        for vertex in primitive:</span><br><span class="line">            execute_vertex_shader(vertex)</span><br><span class="line">        for fragment in primitive:</span><br><span class="line">            execute_fragment_shader(fragment)</span><br><span class="line"></span><br><span class="line"># tile-based</span><br><span class="line"># Pass one</span><br><span class="line">for draw in renderPass:</span><br><span class="line">    for primitive in draw:</span><br><span class="line">        for vertex in primitive:</span><br><span class="line">            execute_vertex_shader(vertex)</span><br><span class="line">        append_tile_list(primitive)</span><br><span class="line"></span><br><span class="line"># Pass two</span><br><span class="line">for tile in renderPass:</span><br><span class="line">    for primitive in tile:</span><br><span class="line">        for fragment in primitive:</span><br><span class="line">            execute_fragment_shader(fragment)</span><br></pre></td></tr></table></figure>
+<p>forward+ &#x3D; tile-based + forward<br>Cluster-based：比tile-based多加一个深度  </p>
+<p>知道哪些shader<br>opengl VS，FS，GS<br>unity的shader<br>Standard Surface Shader： Unity的标准着色器，用于渲染大多数的物体。它支持PBR（Physically-Based Rendering）工作流，包括漫反射、金属度、粗糙度、法线贴图等。<br>Unlit Shader： 不受光照影响的着色器，常用于绘制UI元素或其他不需要光照计算的物体。<br>Image Effect Shader： 图像特效(后处理)着色器，用于在渲染完成后对整个屏幕应用特效，如景深、快速模糊等。<br>Compute Shader： 在GPU上执行自定义的计算操作，而不仅限于图形渲染。Compute Shader通常用于处理并行计算任务，如物理模拟、图像处理、数据转换等。用于CPU和GPU的数据传输以及再GPU上的计算。<br>RayTracing Shader  </p>
+<p>GPU的warp（gpu的if怎么做的-》涉及cuda编程）<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/1024incn/p/4541313.html">CUDA —- Warp解析</a><br>关键词 warp cuda SIMT  </p>
+<p>贝塞尔曲线<br>数据点： 指一条路径的起始点和终止点。<br>控制点：控制点决定了一条路径的弯曲轨迹 </p>
+<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/650597410">图形学八股</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2024/05/06/C-%E5%85%AB%E8%82%A1/" rel="next" title="C++八股">
+                <i class="fa fa-chevron-left"></i> C++八股
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2024/05/07/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BA%93/" rel="prev" title="面试题库">
+                面试题库 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/custom/jiuzhou.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">1.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JiuZhouu</span>
+
+  
+</div>
+
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
