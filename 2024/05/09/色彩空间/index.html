@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="sRGB和lineargamma矫正CRT显示器：输入的电压与输出原色的亮度（luminace）并不是呈线性关系，而是近似于指数为 2.2 的指数函数。伽马矫正：颜色值在输入 CRT 显示器之前，需要幂乘1&#x2F;2.2 ，使得输入 CRT 显示器的三原色亮度高于实际亮度。非线性编码：显示器厂商，制定了sRGB格式，颜色在存储和传输时就经过了伽马纠正。根据韦伯定律，人眼对明暗的感知是非线性">
+<meta name="description" content="sRGB和linear（gamma矫正），HDR和LDR（SDR，HDR，HDR技术核心，色调映射），色彩空间，手机屏幕色域，摄影技术。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="色彩空间">
 <meta property="og:url" content="http://example.com/2024/05/09/%E8%89%B2%E5%BD%A9%E7%A9%BA%E9%97%B4/index.html">
 <meta property="og:site_name" content="个人记录">
-<meta property="og:description" content="sRGB和lineargamma矫正CRT显示器：输入的电压与输出原色的亮度（luminace）并不是呈线性关系，而是近似于指数为 2.2 的指数函数。伽马矫正：颜色值在输入 CRT 显示器之前，需要幂乘1&#x2F;2.2 ，使得输入 CRT 显示器的三原色亮度高于实际亮度。非线性编码：显示器厂商，制定了sRGB格式，颜色在存储和传输时就经过了伽马纠正。根据韦伯定律，人眼对明暗的感知是非线性">
+<meta property="og:description" content="sRGB和linear（gamma矫正），HDR和LDR（SDR，HDR，HDR技术核心，色调映射），色彩空间，手机屏幕色域，摄影技术。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-05-09T08:15:31.000Z">
-<meta property="article:modified_time" content="2024-06-12T10:39:21.211Z">
+<meta property="article:modified_time" content="2024-06-12T10:48:26.523Z">
 <meta property="article:author" content="JiuZhouu">
 <meta name="twitter:card" content="summary">
 
@@ -307,7 +307,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2024-06-12T18:39:21+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2024-06-12T18:48:26+08:00">
                 2024-06-12
               </time>
             
@@ -346,7 +346,8 @@
       
 
       
-        <span id="more"></span>
+        <p>sRGB和linear（gamma矫正），HDR和LDR（SDR，HDR，HDR技术核心，色调映射），色彩空间，手机屏幕色域，摄影技术。</p>
+<span id="more"></span>
 
 <h1 id="sRGB和linear"><a href="#sRGB和linear" class="headerlink" title="sRGB和linear"></a>sRGB和linear</h1><h2 id="gamma矫正"><a href="#gamma矫正" class="headerlink" title="gamma矫正"></a>gamma矫正</h2><p>CRT显示器：输入的电压与输出原色的亮度（luminace）并不是呈线性关系，而是近似于指数为 2.2 的指数函数。<br>伽马矫正：颜色值在输入 CRT 显示器之前，需要幂乘1&#x2F;2.2<br> ，使得输入 CRT 显示器的三原色亮度高于实际亮度。<br>非线性编码：显示器厂商，制定了sRGB格式，颜色在存储和传输时就经过了伽马纠正。<br>根据韦伯定律，人眼对明暗的感知是非线性的，对暗处的变化更为敏感。对于一张数字图像，其量化精度是有限的，经过伽马编码后的图像，整体偏亮，也即会用更多的值量化较暗的颜色。因此经过伽马编码后可以很好的保留暗处细节，缺点是解码时会丢失亮处的细节，不过人眼本身对亮处变化不敏感，这也就无所谓了。<br>传递函数（Transfer function）：使用 sRGB 非线性编码的颜色方便了 CRT 显示器，但是却苦了数码相机制造商，数码相机接收的 luminace 与感光元件产生的电信号呈线性关系，因此数码相机需要设计一个专门的电路或者程序，把线性的数字信号转换为非线性的数字信号，称为光电传递函数（opto-electronic transfer function，OETF），也即编码时用的函数。数码相机只是受害者之一，随着时代的发展，液晶显示器（Liquid Crystal Display，LCD）出现，它的电压与输出亮度就呈线性关系，但此时非线性编码的颜色已经大行其道，不得已还需要设计专门的电路或者程序，把非线性的数字信号转换为线性的数字信号，称为电光传递函数（electronic-opto transfer function，OETF），也即解码时用的函数。此外，打印机、扫描仪等设备需要设计其专用的传递函数</p>
 <h1 id="HDR和LDR"><a href="#HDR和LDR" class="headerlink" title="HDR和LDR"></a>HDR和LDR</h1><h2 id="SDR"><a href="#SDR" class="headerlink" title="SDR"></a>SDR</h2><p>传统图像软件、相机和显示器的动态范围而言的，也即在 sRGB 颜色空间下，用 8bit 二进制位量化颜色的图像文件和显示器，它们的动态范围称为标准动态范围（Standard Dynamic Range，SDR）。动态范围有限，无法量化场景各处的明暗细节。</p>
