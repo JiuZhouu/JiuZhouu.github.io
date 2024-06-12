@@ -442,7 +442,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2024-06-12T18:34:02+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2024-06-12T18:39:30+08:00">
                 2024-06-12
               </time>
             
@@ -578,8 +578,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2024-05-09T20:28:10+08:00">
-                2024-05-09
+              <time title="更新于" itemprop="dateModified" datetime="2024-06-12T18:39:00+08:00">
+                2024-06-12
               </time>
             
           </span>
@@ -614,7 +614,9 @@
       
         
           
-            <h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><p>参考链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/335048580">https://zhuanlan.zhihu.com/p/335048580</a>  </p>
+            <span id="more"></span>
+
+<h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><p>参考链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/335048580">https://zhuanlan.zhihu.com/p/335048580</a>  </p>
 
           
         
@@ -1116,8 +1118,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2024-05-09T20:10:44+08:00">
-                2024-05-09
+              <time title="更新于" itemprop="dateModified" datetime="2024-06-12T18:39:21+08:00">
+                2024-06-12
               </time>
             
           </span>
@@ -1153,6 +1155,7 @@
         
           
             <span id="more"></span>
+
 <h1 id="sRGB和linear"><a href="#sRGB和linear" class="headerlink" title="sRGB和linear"></a>sRGB和linear</h1><h2 id="gamma矫正"><a href="#gamma矫正" class="headerlink" title="gamma矫正"></a>gamma矫正</h2><p>CRT显示器：输入的电压与输出原色的亮度（luminace）并不是呈线性关系，而是近似于指数为 2.2 的指数函数。<br>伽马矫正：颜色值在输入 CRT 显示器之前，需要幂乘1&#x2F;2.2<br> ，使得输入 CRT 显示器的三原色亮度高于实际亮度。<br>非线性编码：显示器厂商，制定了sRGB格式，颜色在存储和传输时就经过了伽马纠正。<br>根据韦伯定律，人眼对明暗的感知是非线性的，对暗处的变化更为敏感。对于一张数字图像，其量化精度是有限的，经过伽马编码后的图像，整体偏亮，也即会用更多的值量化较暗的颜色。因此经过伽马编码后可以很好的保留暗处细节，缺点是解码时会丢失亮处的细节，不过人眼本身对亮处变化不敏感，这也就无所谓了。<br>传递函数（Transfer function）：使用 sRGB 非线性编码的颜色方便了 CRT 显示器，但是却苦了数码相机制造商，数码相机接收的 luminace 与感光元件产生的电信号呈线性关系，因此数码相机需要设计一个专门的电路或者程序，把线性的数字信号转换为非线性的数字信号，称为光电传递函数（opto-electronic transfer function，OETF），也即编码时用的函数。数码相机只是受害者之一，随着时代的发展，液晶显示器（Liquid Crystal Display，LCD）出现，它的电压与输出亮度就呈线性关系，但此时非线性编码的颜色已经大行其道，不得已还需要设计专门的电路或者程序，把非线性的数字信号转换为线性的数字信号，称为电光传递函数（electronic-opto transfer function，OETF），也即解码时用的函数。此外，打印机、扫描仪等设备需要设计其专用的传递函数</p>
 <h1 id="HDR和LDR"><a href="#HDR和LDR" class="headerlink" title="HDR和LDR"></a>HDR和LDR</h1><h2 id="SDR"><a href="#SDR" class="headerlink" title="SDR"></a>SDR</h2><p>传统图像软件、相机和显示器的动态范围而言的，也即在 sRGB 颜色空间下，用 8bit 二进制位量化颜色的图像文件和显示器，它们的动态范围称为标准动态范围（Standard Dynamic Range，SDR）。动态范围有限，无法量化场景各处的明暗细节。</p>
 <h2 id="HDR"><a href="#HDR" class="headerlink" title="HDR"></a>HDR</h2><p>提高显示器的动态范围，并且用更大的色域编码各种颜色。（成本的提高，以及对旧设备的兼容）  </p>
@@ -1406,8 +1409,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2024-05-09T20:10:46+08:00">
-                2024-05-09
+              <time title="更新于" itemprop="dateModified" datetime="2024-06-12T18:39:42+08:00">
+                2024-06-12
               </time>
             
           </span>
@@ -1441,14 +1444,68 @@
 
       
         
-          <p>供复习面试时查漏补缺<br>目前已涵盖内容：</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2024/05/07/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BA%93/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <span id="more"></span>
+
+<h1 id="C-C"><a href="#C-C" class="headerlink" title="C&#x2F;C++"></a>C&#x2F;C++</h1><p>普通函数指针和成员函数指针的区别</p>
+<p>多态（静态、动态）</p>
+<p>数组和链表</p>
+<p>构造函数析构函数能不能是虚函数</p>
+<p>虚函数，虚函数表，虚表指针</p>
+<p>智能指针（分类，情况，weak ptr）</p>
+<p>指针和引用的区别</p>
+<p>协变</p>
+<p>static</p>
+<p>const修饰符，const原理</p>
+<p>const int* 和 int* const【左定值，右定向】</p>
+<p>空类的大小是多少</p>
+<p>为什么要内存对齐</p>
+<p>左值&#x2F;右值，std::move, std::forward, std::vector</p>
+<p>new和malloc区别<br>用malloc给List分配空间， 应该用new，否则没初始化调用构造函数</p>
+<p>delete和free区别</p>
+<p>虚拟内存</p>
+<p>模板</p>
+<p>vector的push_back()和emplace_back()的区别</p>
+<p>C++存储区</p>
+<p>函数调用过程（ESP、EBP、压栈）</p>
+<p>进程和线程，进程通信</p>
+<p>如何排查崩溃或者偶现的问题</p>
+<p>静态库&#x2F;动态库</p>
+<p>程序崩溃如何调用堆栈</p>
+<p>内存泄露排查和处理</p>
+<p>堆和栈区别</p>
+<p>nullptr和NULL区别</p>
+<p>值传参和引用传参的区别</p>
+<p>C++基础内置类型大小</p>
+<p>int最小值, 最大值的二进制表示</p>
+<p>有符号整数和无符号整数的右移操作</p>
+<h1 id="图形学"><a href="#图形学" class="headerlink" title="图形学"></a>图形学</h1><p>CPU和GPU渲染管线</p>
+<p>如何计算空间中点到线段距离</p>
+<p>如何判断点在三角形内</p>
+<p>culling有哪些，视锥剔除的计算过程</p>
+<p>GPUInstancing</p>
+<p>光栅化</p>
+<p>阴影&#x2F;动态阴影</p>
+<p>移动、碰撞、渲染多怎么优化</p>
+<p>DrawCall如何优化</p>
+<p>合并Mesh做了什么，为什么只有相同材质才能合并</p>
+<p>正交相机和透视相机区别</p>
+<p>DrawCall是什么，如何优化</p>
+<p>批处理做了什么</p>
+<p>MVP矩阵</p>
+<p>透明物体渲染</p>
+<p>模板测试</p>
+<h1 id="手撕"><a href="#手撕" class="headerlink" title="手撕"></a>手撕</h1><p>合并2个&#x2F;k个有序链表 </p>
+<p>找单向链表倒数第n个结点</p>
+<p>旋转链表</p>
+<p>二叉树中和为目标值的路径</p>
+<p>数组中的重复元素，要求最优</p>
+<p>两个字符串输出最长公共子串</p>
+<p>几种排序</p>
+<p>BFS</p>
+<p>DFS</p>
+
+          
         
       
     </div>
