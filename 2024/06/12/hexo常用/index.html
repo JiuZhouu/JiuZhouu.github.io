@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="算法，待整理。">
+<meta name="description" content="推荐使用hexo建站，hexo原理简要说明，hexo搭建，hexo 常用命令。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="算法">
-<meta property="og:url" content="http://example.com/2024/05/09/%E7%AE%97%E6%B3%95/index.html">
+<meta property="og:title" content="hexo常用">
+<meta property="og:url" content="http://example.com/2024/06/12/hexo%E5%B8%B8%E7%94%A8/index.html">
 <meta property="og:site_name" content="个人记录">
-<meta property="og:description" content="算法，待整理。">
+<meta property="og:description" content="推荐使用hexo建站，hexo原理简要说明，hexo搭建，hexo 常用命令。">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-05-09T12:13:47.000Z">
-<meta property="article:modified_time" content="2024-06-12T10:48:53.885Z">
+<meta property="article:published_time" content="2024-06-12T10:32:28.000Z">
+<meta property="article:modified_time" content="2024-06-28T16:33:08.521Z">
 <meta property="article:author" content="JiuZhouu">
 <meta name="twitter:card" content="summary">
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2024/05/09/算法/"/>
+  <link rel="canonical" href="http://example.com/2024/06/12/hexo常用/"/>
 
 
 
 
 
-  <title>算法 | 个人记录</title>
+  <title>hexo常用 | 个人记录</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/05/09/%E7%AE%97%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/06/12/hexo%E5%B8%B8%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">算法</h1>
+          <h1 class="post-title" itemprop="name headline">hexo常用</h1>
         
 
         <div class="post-meta">
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-09T20:13:47+08:00">
-                2024-05-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-06-12T18:32:28+08:00">
+                2024-06-12
               </time>
             
 
@@ -307,8 +307,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2024-06-12T18:48:53+08:00">
-                2024-06-12
+              <time title="更新于" itemprop="dateModified" datetime="2024-06-29T00:33:08+08:00">
+                2024-06-29
               </time>
             
           </span>
@@ -346,10 +346,50 @@
       
 
       
-        <p>算法，待整理。</p>
+        <p>推荐使用hexo建站，hexo原理简要说明，hexo搭建，hexo 常用命令。</p>
 <span id="more"></span>
-
-<h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><p>参考链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/335048580">https://zhuanlan.zhihu.com/p/335048580</a>  </p>
+<h1 id="推荐使用hexo建站"><a href="#推荐使用hexo建站" class="headerlink" title="推荐使用hexo建站"></a>推荐使用hexo建站</h1><ul>
+<li>成熟框架，用户活跃，插件主题多，有中文文档</li>
+<li>一行代码完成框架安装，同时兼容win&#x2F;mac&#x2F;linux</li>
+<li>纯md格式渲染学习成本低、保存完整性高</li>
+<li>链接github直接建站，发布过程流畅丝滑</li>
+</ul>
+<h1 id="hexo原理简要说明"><a href="#hexo原理简要说明" class="headerlink" title="hexo原理简要说明"></a>hexo原理简要说明</h1><ul>
+<li>更新博客的基本流程：新建文章，文章写作，本地预览md渲染效果，远程部署更新网站</li>
+<li>hexo渲染一篇post的工作流程：</li>
+</ul>
+<ol>
+<li>拿到一个markdown文件，</li>
+<li>根据这个文件的layout类型，</li>
+<li>进行样式排版，生成html文件，</li>
+<li>最终展示到网页端。</li>
+</ol>
+<ul>
+<li>一个source&#x2F;_posts&#x2F;文件夹下的markdown文件就会对应到一篇post。  </li>
+<li>source下新建的文件夹是tab，如about&#x2F;categories&#x2F;tags，里面存放该标签或者分类下的所有文章。</li>
+<li>hexo支持你用多种方式呈现</li>
+</ul>
+<ol>
+<li>允许layout排版，主题和插件，</li>
+<li>允许配置格式，页首页尾，tag，分类，归档，搜索，评论，统计，等等，</li>
+<li>md格式允许图片、PDF、数学公式、链接，</li>
+</ol>
+<h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing.html">hexo官方文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://fuguigui.github.io/hexo2/">一次完整的写作流程</a></li>
+</ul>
+<h1 id="hexo搭建"><a href="#hexo搭建" class="headerlink" title="hexo搭建"></a>hexo搭建</h1><ul>
+<li>安装本地环境（git, node.js, hexo）  </li>
+<li>hexo命令新建文件夹、新建博客，md编写博客内容，可配置心仪主题  </li>
+<li>简单部署github，网站可在线访问</li>
+</ul>
+<h2 id="参考链接：-1"><a href="#参考链接：-1" class="headerlink" title="参考链接："></a>参考链接：</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://nitchcloche.com/2024/01/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/blog%E6%95%99%E5%AD%A6/github%20blog">零成本从零开始基于GitHub pages搭建个人blog</a> </li>
+<li><a target="_blank" rel="noopener" href="https://blog.l3zc.com/2022/05/mac%E7%8E%AF%E5%A2%83%E4%B8%8B%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Mac OS环境下使用Hexo搭建个人博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://durant35.github.io/2016/01/26/hexo_%E6%B7%BB%E5%8A%A0about%E5%AF%BC%E8%88%AA%E6%A0%8F/">hexo添加about导航栏</a></li>
+<li><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1662733">Hexo博客教程（二）| 如何写作新文章并发布</a></li>
+</ul>
+<h1 id="hexo-常用命令"><a href="#hexo-常用命令" class="headerlink" title="hexo 常用命令"></a>hexo 常用命令</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;文章名称&quot;  =&gt; hexo new &quot;文章名称&quot;   </span><br><span class="line">hexo g  =&gt; hexo generate  #生成  </span><br><span class="line">hexo s  =&gt; hexo server  #启动服务预览  </span><br><span class="line">hexo d  =&gt; hexo deploy  #部署  </span><br><span class="line">hexo new page &quot;文件夹名称&quot; # 在source下新建XX文件夹，文件夹下新建index.md，加about/tag/index</span><br><span class="line"></span><br><span class="line">hexo server   #Hexo 会监视文件变动并自动更新，无须重启服务器。  </span><br><span class="line">hexo server -s   #静态模式  </span><br><span class="line">hexo server -p 5000   #更改端口  </span><br><span class="line">hexo server -i 192.168.1.1   #自定义IP  </span><br><span class="line">hexo clean   #清除缓存，网页正常情况下可以忽略此条命令 </span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -374,8 +414,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2024/05/09/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" rel="next" title="数学基础">
-                <i class="fa fa-chevron-left"></i> 数学基础
+              <a href="/2024/05/09/%E7%AE%97%E6%B3%95/" rel="next" title="算法">
+                <i class="fa fa-chevron-left"></i> 算法
               </a>
             
           </div>
@@ -384,8 +424,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2024/06/12/hexo%E5%B8%B8%E7%94%A8/" rel="prev" title="hexo常用">
-                hexo常用 <i class="fa fa-chevron-right"></i>
+              <a href="/2024/06/12/%E3%80%8ARAW%E7%85%A7%E7%89%87%E5%A4%84%E7%90%86%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="prev" title="《RAW照片处理》读书笔记">
+                《RAW照片处理》读书笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -504,7 +544,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">排序算法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%99"><span class="nav-number">1.</span> <span class="nav-text">推荐使用hexo建站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo%E5%8E%9F%E7%90%86%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E"><span class="nav-number">2.</span> <span class="nav-text">hexo原理简要说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">参考链接：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo%E6%90%AD%E5%BB%BA"><span class="nav-number">3.</span> <span class="nav-text">hexo搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5%EF%BC%9A-1"><span class="nav-number">3.1.</span> <span class="nav-text">参考链接：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">4.</span> <span class="nav-text">hexo 常用命令</span></a></li></ol></div>
             
 
           </div>
