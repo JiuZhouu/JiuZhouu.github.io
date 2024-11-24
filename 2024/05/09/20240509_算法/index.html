@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="算法刷题和面试准备。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法刷题">
+<meta property="og:url" content="http://example.com/2024/05/09/20240509_%E7%AE%97%E6%B3%95/index.html">
+<meta property="og:site_name" content="个人记录">
+<meta property="og:description" content="算法刷题和面试准备。">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-05-09T12:13:47.000Z">
+<meta property="article:modified_time" content="2024-11-23T13:05:22.524Z">
+<meta property="article:author" content="JiuZhouu">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/2024/05/09/20240509_算法/"/>
+
+
+
+
+
+  <title>算法刷题 | 个人记录</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">个人记录</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/05/09/20240509_%E7%AE%97%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/custom/jiuzhou.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">算法刷题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-09T20:13:47+08:00">
+                2024-05-09
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2024-11-23T21:05:22+08:00">
+                2024-11-23
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>算法刷题和面试准备。</p>
+<span id="more"></span>
+
+<h1 id="笔试准备"><a href="#笔试准备" class="headerlink" title="笔试准备"></a>笔试准备</h1><h2 id="Step1：熟悉基础语法"><a href="#Step1：熟悉基础语法" class="headerlink" title="Step1：熟悉基础语法"></a>Step1：熟悉基础语法</h2><p>先过一遍基础语法，熟悉leetcode网站使用：<a target="_blank" rel="noopener" href="https://leetcode.cn/studyplan/primers-list/">https://leetcode.cn/studyplan/primers-list/</a><br>过一遍hot100，了解基本题型和考察重点：<a target="_blank" rel="noopener" href="https://leetcode.cn/studyplan/top-100-liked/">https://leetcode.cn/studyplan/top-100-liked/</a></p>
+<h2 id="Step2：按题型刷题，形成自己的模板和错题本"><a href="#Step2：按题型刷题，形成自己的模板和错题本" class="headerlink" title="Step2：按题型刷题，形成自己的模板和错题本"></a>Step2：按题型刷题，形成自己的模板和错题本</h2><p>参考灵神题单：<a target="_blank" rel="noopener" href="https://leetcode.cn/circle/discuss/RvFUtj/">https://leetcode.cn/circle/discuss/RvFUtj/</a><br>笔记提取：</p>
+<h1 id="面试准备"><a href="#面试准备" class="headerlink" title="面试准备"></a>面试准备</h1><h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><p>参考链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/335048580">https://zhuanlan.zhihu.com/p/335048580</a>  </p>
+<h2 id="hot100"><a href="#hot100" class="headerlink" title="hot100"></a>hot100</h2><p>重复刷hot100题，面试基本从里面出或小改动。</p>
+<h1 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h1><p><a target="_blank" rel="noopener" href="https://programmercarl.com/qita/acm.html">https://programmercarl.com/qita/acm.html</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jfchen/p/python-acm-input-and-output.html">https://www.cnblogs.com/jfchen/p/python-acm-input-and-output.html</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv15996133/">https://www.bilibili.com/read/cv15996133/</a></p>
+<h1 id="美团经典题"><a href="#美团经典题" class="headerlink" title="美团经典题"></a>美团经典题</h1><h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><h3 id="小美的平衡矩阵"><a href="#小美的平衡矩阵" class="headerlink" title="小美的平衡矩阵"></a>小美的平衡矩阵</h3><p>小美拿到了一个nxn的矩阵，其中每个元素是 0 或者 1。小美认为一个矩形区域是完美的，当且仅当该区域内 0 的数量恰好等于 1 的数量。<br>现在，小美希望你回答有多少个i∗i的完美矩形区域。你需要回答1≤i≤n的所有答案。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">n = int(input())</span><br><span class="line">li = []</span><br><span class="line">for _ in range(n):</span><br><span class="line">    li.append(input())</span><br><span class="line">sm = [[0] * (n + 1) for _ in range(n + 1)]</span><br><span class="line">for i in range(1, n + 1):</span><br><span class="line">    for j in range(1, n + 1):</span><br><span class="line">        sm[i][j] = sm[i - 1][j] + sm[i][j - 1] + int(li[i - 1][j - 1]) - sm[i - 1][j - 1]</span><br><span class="line"></span><br><span class="line">for k in range(1, n + 1):</span><br><span class="line">    t = k * k</span><br><span class="line">    if t % 2:</span><br><span class="line">        print(0)</span><br><span class="line">        continue</span><br><span class="line">    cnt = 0</span><br><span class="line">    for i in range(k, n + 1):</span><br><span class="line">        for j in range(k, n + 1):</span><br><span class="line">            if sm[i][j] - sm[i - k][j] - sm[i][j - k] + sm[i - k][j - k] == t // 2:</span><br><span class="line">                cnt += 1</span><br><span class="line">    print(cnt)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="小美的字符串变换"><a href="#小美的字符串变换" class="headerlink" title="小美的字符串变换"></a>小美的字符串变换</h3><p>小美拿到了一个长度为n的字符串，她希望将字符串从左到右平铺成一个矩阵（先平铺第一行，然后是第二行，以此类推，矩阵有<br>x行y列，必须保证x∗y&#x3D;n，即每y个字符换行，共x行）。</p>
+<p>该矩阵的权值定义为这个矩阵的连通块数量。小美希望最终矩阵的权值尽可能小，你能帮小美求出这个最小权值吗？</p>
+<p>注：我们定义，上下左右四个方向相邻的相同字符是连通的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">n = int(input())</span><br><span class="line"> s = input()</span><br><span class="line"> </span><br><span class="line"> direct = [[0,1,0,-1],</span><br><span class="line">         [-1,0,1,0]]</span><br><span class="line"> </span><br><span class="line"> def dfs(matrix, i, j, visited, ch):</span><br><span class="line">     global direct</span><br><span class="line">     row = len(matrix)</span><br><span class="line">     col = len(matrix[0])</span><br><span class="line"> </span><br><span class="line">     for t in range(4):</span><br><span class="line">         new_i = i + direct[0][t]</span><br><span class="line">         new_j = j + direct[1][t]</span><br><span class="line">         if 0 &lt;= new_i &lt; row and 0 &lt;= new_j &lt; col and visited[new_i][new_j] == False and matrix[new_i][new_j] == ch:</span><br><span class="line">             visited[new_i][new_j] = True</span><br><span class="line">             dfs(matrix, new_i, new_j, visited, ch)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> def get_val(matrix):</span><br><span class="line">     res = 0</span><br><span class="line">     row = len(matrix)</span><br><span class="line">     col = len(matrix[0])</span><br><span class="line">     visited = [[False] * col for _ in range(row)]</span><br><span class="line">     for i in range(row):</span><br><span class="line">         for j in range(col):</span><br><span class="line">             if visited[i][j] == False:</span><br><span class="line">                 res += 1</span><br><span class="line">                 visited[i][j] = True</span><br><span class="line">                 dfs(matrix, i, j, visited, matrix[i][j])</span><br><span class="line">     return res</span><br><span class="line"> </span><br><span class="line"> min_val = float(&#x27;inf&#x27;)</span><br><span class="line"> for x in range(1, n):</span><br><span class="line">     if n % x != 0:</span><br><span class="line">         continue</span><br><span class="line">     y = n // x</span><br><span class="line">     matrix = []</span><br><span class="line">     i = 0</span><br><span class="line">     while i &lt; n:</span><br><span class="line">         matrix.append(s[i:i+y])</span><br><span class="line">         i += y</span><br><span class="line"> </span><br><span class="line">     cur_val = get_val(matrix)</span><br><span class="line">     min_val = min(min_val, cur_val)</span><br><span class="line"> print(min_val)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="小美的好矩阵"><a href="#小美的好矩阵" class="headerlink" title="小美的好矩阵"></a>小美的好矩阵</h3><p>小美定义一个矩阵是好矩阵，当且仅当该矩阵满足：</p>
+<ol>
+<li>矩阵仅由’A’、’B’、’C’三种字符组成。且三种字符都出现过。</li>
+<li>矩阵相邻的字符都不相等。<br>现在给定一个n∗m的矩阵，小美想知道有多少个3*3的子矩阵是好矩阵，你能帮帮她吗？<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">n,m=[int(i) for i in input().split(&#x27; &#x27;)]</span><br><span class="line">matrix=[]</span><br><span class="line"></span><br><span class="line">for i in range(n):</span><br><span class="line">    matrix.append([j for j in input()])</span><br><span class="line"></span><br><span class="line">def judge(matrix, row, col):</span><br><span class="line">    uni_ch=set()</span><br><span class="line">    for x in range(row,row+3):</span><br><span class="line">        for y in range(col,col+3):</span><br><span class="line">            ch=matrix[x][y]</span><br><span class="line">            uni_ch.add(ch)</span><br><span class="line">            if ch &gt;= &#x27;D&#x27;&amp;nbs***bsp;(y + 1 &lt; col + 3 and ch == matrix[x][y + 1])&amp;nbs***bsp;(x + 1 &lt; row + 3 and ch == matrix[x + 1][y]):</span><br><span class="line">                return False</span><br><span class="line">    return len(uni_ch)==3</span><br><span class="line">res=0</span><br><span class="line">for i in range(0,n-2):</span><br><span class="line">    for j in range(0,m-2):</span><br><span class="line">        if judge(matrix,i,j):</span><br><span class="line">            res+=1</span><br><span class="line">print(res)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="小美的蛋糕切割"><a href="#小美的蛋糕切割" class="headerlink" title="小美的蛋糕切割"></a>小美的蛋糕切割</h3><p>小美有一个矩形的蛋糕，共分成了 n 行 m 列，共 n×m 个区域，每个区域是一个小正方形，已知蛋糕每个区域都有一个美味度。她想切一刀把蛋糕切成两部分，自己吃一部分，小团吃另一部分。</p>
+<p>小美希望两个人吃的部分的美味度之和尽可能接近，请你输出∣s1−s2∣的最小值。（其中<br>s1代表小美吃的美味度，<br>s2代表小团吃的美味度）。</p>
+<p>请务必保证，切下来的区域都是完整的，即不能把某个小正方形切成两个小区域。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">h, w = [int(n) for n in input().split()]</span><br><span class="line">m = []</span><br><span class="line">for i in range(h):</span><br><span class="line">    m.append([int(n) for n in input().split()])</span><br><span class="line"></span><br><span class="line">h_sum = [sum([m_[i] for m_ in m]) for i in range(w)]</span><br><span class="line">w_sum = [sum(m[i]) for i in range(h)]</span><br><span class="line">max = sum(w_sum)</span><br><span class="line"></span><br><span class="line">for i in range(1, w):</span><br><span class="line">    part1_sum = sum(h_sum[:i])</span><br><span class="line">    part2_sum = sum(h_sum[i:])</span><br><span class="line">    sub = abs(part1_sum - part2_sum)</span><br><span class="line">    if sub &lt; max:</span><br><span class="line">        max = sub</span><br><span class="line">    </span><br><span class="line">for i in range(1, h):</span><br><span class="line">    part1_sum = sum(w_sum[:i])</span><br><span class="line">    part2_sum = sum(w_sum[i:])</span><br><span class="line">    sub = abs(part1_sum - part2_sum)</span><br><span class="line">    if sub &lt; max:</span><br><span class="line">        max = sub</span><br><span class="line"></span><br><span class="line">print(max)</span><br></pre></td></tr></table></figure>
+
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="小美的字符串匹配度"><a href="#小美的字符串匹配度" class="headerlink" title="小美的字符串匹配度"></a>小美的字符串匹配度</h3><p>小美有两个长度为n只包含小写字母的字符串s和t，小美定义“两个字符串的匹配度”为i∈[1,n]中si&#x3D;ti的数量，例如”abacd”和”aabdd”的匹配度就是2。  </p>
+<p>现在你可以进行最多一次以下操作:<br>对于字符串t，选择两个索引i,j(1≤i&lt;j≤n)，交换ti和tj。</p>
+<p>小美想知道，s和t的最大字符串匹配度是多少</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">from collections import defaultdict</span><br><span class="line"></span><br><span class="line">n = int(input())</span><br><span class="line">s = input()</span><br><span class="line">t = input()</span><br><span class="line"></span><br><span class="line">td = defaultdict(set)</span><br><span class="line"></span><br><span class="line">res = 0</span><br><span class="line">count = 0</span><br><span class="line">for sc, tc in zip(s, t):</span><br><span class="line">    if sc == tc: res += 1</span><br><span class="line">    else:</span><br><span class="line">        if count == 2: continue</span><br><span class="line">        if sc in td:</span><br><span class="line">            if tc in td[sc]:</span><br><span class="line">                count = 2</span><br><span class="line">            else:</span><br><span class="line">                count = 1</span><br><span class="line">        </span><br><span class="line">        td[tc].add(sc)</span><br><span class="line">print(res + count)</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="树-图-环"><a href="#树-图-环" class="headerlink" title="树&amp;图&amp;环"></a>树&amp;图&amp;环</h2><h3 id="小美的树上染色"><a href="#小美的树上染色" class="headerlink" title="小美的树上染色"></a>小美的树上染色</h3><p>小美拿到了一棵树，每个节点有一个权值。初始每个节点都是白色。<br>小美有若干次操作，每次操作可以选择两个相邻的节点，如果它们都是白色且权值的乘积是完全平方数，小美就可以把这两个节点同时染红。<br>小美想知道，自己最多可以染红多少个节点？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">import math</span><br><span class="line"></span><br><span class="line">n = int(input())</span><br><span class="line">val = list(map(int, input().strip().split()))</span><br><span class="line"></span><br><span class="line"># 邻接列表</span><br><span class="line">matrix = [[] for _ in range(n)]</span><br><span class="line">for _ in range(n - 1):</span><br><span class="line">    i, j = list(map(int, input().strip().split()))</span><br><span class="line">    matrix[i - 1].append(j - 1)</span><br><span class="line">    matrix[j - 1].append(i - 1)</span><br><span class="line"></span><br><span class="line">dp = [[0] * 2 for _ in range(n)]</span><br><span class="line"></span><br><span class="line">def dfs(cur, fa):</span><br><span class="line">    # 第cur个节点不染色</span><br><span class="line">    for i in matrix[cur]:</span><br><span class="line">        if i == fa:continue</span><br><span class="line">        dfs(i, cur)</span><br><span class="line">        dp[cur][0] += max(dp[i][0], dp[i][1])</span><br><span class="line"></span><br><span class="line">    # 第cur个节点染色</span><br><span class="line">    for i in matrix[cur]:</span><br><span class="line">        if i == fa:continue</span><br><span class="line">        tmp = int(math.sqrt(val[cur] * val[i]))</span><br><span class="line">        if tmp * tmp != val[cur] * val[i]:continue</span><br><span class="line">        dp[cur][1] = max(dp[cur][1], dp[cur][0] - max(dp[i][0], dp[i][1]) + dp[i][0] + 2)</span><br><span class="line"></span><br><span class="line">dfs(0, -1)</span><br><span class="line">print(max(dp[0][0], dp[0][1]))</span><br></pre></td></tr></table></figure>
+
+<h3 id="小美的朋友关系"><a href="#小美的朋友关系" class="headerlink" title="小美的朋友关系"></a>小美的朋友关系</h3><p>小美认为，在人际交往中，但是随着时间的流逝，朋友的关系也是会慢慢变淡的，最终朋友关系就淡忘了。<br>现在初始有一些朋友关系，存在一些事件会导致两个人淡忘了他们的朋友关系。小美想知道某一时刻中，某两人是否可以通过朋友介绍互相认识？<br>事件共有 2 种：<br>1 u v：代表编号 u 的人和编号 v 的人淡忘了他们的朋友关系。<br>2 u v：代表小美查询编号 u 的人和编号 v 的人是否能通过朋友介绍互相认识。<br>注：介绍可以有多层，比如 2 号把 1 号介绍给 3 号，然后 3 号再把 1 号介绍给 4 号，这样 1 号和 4 号就认识了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">class UnionFind:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.father = &#123;&#125;</span><br><span class="line"></span><br><span class="line">    def find(self, u):</span><br><span class="line">        if u == self.father[u]:</span><br><span class="line">            return u</span><br><span class="line">        self.father[u] = self.find(self.father[u])</span><br><span class="line">        return self.father[u]</span><br><span class="line"></span><br><span class="line">    def join(self, u, v):</span><br><span class="line">        u = self.find(u)</span><br><span class="line">        v = self.find(v)</span><br><span class="line">        if u != v:</span><br><span class="line">            self.father[v] = u</span><br><span class="line">n, m, q = list(map(int, input().strip().split()))</span><br><span class="line"></span><br><span class="line">uf = UnionFind()</span><br><span class="line">relationship = set()</span><br><span class="line">events = []</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 读取初始朋友关系</span><br><span class="line">for _ in range(m):</span><br><span class="line">    u, v = list(map(int, input().strip().split()))</span><br><span class="line">    relationship.add((u, v))</span><br><span class="line">    uf.father.setdefault(u, u)</span><br><span class="line">    uf.father.setdefault(v, v)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 读取事件</span><br><span class="line">for _ in range(q):</span><br><span class="line">    op, u, v = map(int, input().strip().split())</span><br><span class="line">    if op == 1:</span><br><span class="line">        if (u, v) in relationship:</span><br><span class="line">            relationship.remove((u, v))</span><br><span class="line">        elif (v, u) in relationship:</span><br><span class="line">            relationship.remove((v, u))</span><br><span class="line">        else:</span><br><span class="line">            continue</span><br><span class="line">    events.append([op, u, v])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 将不会被淡忘的关系加入并查集</span><br><span class="line">for u, v in relationship:</span><br><span class="line">    uf.join(u, v)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 逆序处理事件</span><br><span class="line">result = []</span><br><span class="line">for op, u, v in events[::-1]:</span><br><span class="line">    if op == 1:</span><br><span class="line">        uf.join(u, v)</span><br><span class="line">    else:</span><br><span class="line">        uf.father.setdefault(u, u)</span><br><span class="line">        uf.father.setdefault(v, v)</span><br><span class="line">        if uf.find(u) == uf.find(v):</span><br><span class="line">            result.append(&#x27;Yes&#x27;)</span><br><span class="line">        else:</span><br><span class="line">            result.append(&#x27;No&#x27;)</span><br><span class="line"></span><br><span class="line">for res in result[::-1]:</span><br><span class="line">    print(res)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="小美走公路"><a href="#小美走公路" class="headerlink" title="小美走公路"></a>小美走公路</h3><p>有一个环形的公路，上面共有n站，现在给定了顺时针第i站到第i+1站之间的距离（特殊的，也给出了第n站到第 1 站的距离）。小美想沿着公路第x站走到第y站，她想知道最短的距离是多少？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">N = int(input())</span><br><span class="line"></span><br><span class="line">dis = [int(x) for x in input().split()]</span><br><span class="line"></span><br><span class="line">location = [int(y) for y in input().split()]</span><br><span class="line"></span><br><span class="line">distance_1 = 0</span><br><span class="line">distance_2 = 0</span><br><span class="line"></span><br><span class="line">for i in range(min(location)-1,max(location)-1):</span><br><span class="line">    distance_1 +=  dis[i]</span><br><span class="line">    dis[i] = 0</span><br><span class="line">distance_2 = sum(dis)</span><br><span class="line"></span><br><span class="line">print(min(distance_1,distance_2))</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="小美的排列构造"><a href="#小美的排列构造" class="headerlink" title="小美的排列构造"></a>小美的排列构造</h3><p>小美定义一个数组a的权值计算如下：首先将<br>a的每一对相邻两项求和，得到一个b数组。那么b数组的最大值减最小值即为a数组的权值。<br>现在小美希望你能构造一个长度为n的排列，满足权值尽可能小。你能帮帮她吗？<br>排列是指一个长度为n的数组，其中 1-n每个元素恰好出现一次。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">import sys</span><br><span class="line"> </span><br><span class="line">for line in sys.stdin:</span><br><span class="line">    a = line.split()</span><br><span class="line">     </span><br><span class="line">n = int(a[0])</span><br><span class="line">res = [0 for i in range(n)]</span><br><span class="line">max_n = n</span><br><span class="line">min_n = 1</span><br><span class="line">for i in range(1,n,2):</span><br><span class="line">    res[i] = max_n</span><br><span class="line">    max_n = max_n - 1</span><br><span class="line"> </span><br><span class="line">for i in range(0,n,2):</span><br><span class="line">    res[i] = min_n</span><br><span class="line">    min_n +=1</span><br><span class="line">out = &quot; &quot;.join(str(r) for r in res)</span><br><span class="line">print(out)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="小美的区间删除"><a href="#小美的区间删除" class="headerlink" title="小美的区间删除"></a>小美的区间删除</h3><p>小美拿到了一个大小为n的数组，她希望删除一个区间后，使得剩余所有元素的乘积末尾至少有k个 0。小美想知道，一共有多少种不同的删除方案？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">n, k = map(int, input().split())</span><br><span class="line">li = list(map(int, input().split()))</span><br><span class="line">numli = []</span><br><span class="line"></span><br><span class="line">for x in li:</span><br><span class="line">    t = x</span><br><span class="line">    a = b = 0</span><br><span class="line">    while t % 2 == 0&amp;nbs***bsp;t % 5 == 0:</span><br><span class="line">        if t % 2 == 0:</span><br><span class="line">            t //= 2</span><br><span class="line">            a += 1</span><br><span class="line">        if t % 5 == 0:</span><br><span class="line">            b += 1</span><br><span class="line">            t //= 5</span><br><span class="line">    numli.append((a, b))</span><br><span class="line"># print(numli)</span><br><span class="line">sm2 = [0] * (n + 1) # 求2的数量的前缀和</span><br><span class="line">sm5 = [0] * (n + 1)</span><br><span class="line">for i in range(1, n + 1):</span><br><span class="line">    sm2[i] = sm2[i - 1] + numli[i - 1][0]</span><br><span class="line">    sm5[i] = sm5[i - 1] + numli[i - 1][1]</span><br><span class="line"></span><br><span class="line"># print(sm2)</span><br><span class="line"># print(sm5)</span><br><span class="line"></span><br><span class="line">i= 0</span><br><span class="line">j = 0</span><br><span class="line">res = 0</span><br><span class="line">while i &lt; n + 1:</span><br><span class="line">    while j &lt; n + 1:</span><br><span class="line">        a2 = sm2[-1] - sm2[j] + sm2[i]</span><br><span class="line">        a5 = sm5[-1] - sm5[j] + sm5[i]</span><br><span class="line">        if min(a2, a5) &lt; k:</span><br><span class="line">            break</span><br><span class="line">        j += 1</span><br><span class="line">    if i &gt;= j:</span><br><span class="line">        break</span><br><span class="line">    res += j - 1 - i</span><br><span class="line">    i += 1</span><br><span class="line">print(res)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="平均数为k的最长连续子数组"><a href="#平均数为k的最长连续子数组" class="headerlink" title="平均数为k的最长连续子数组"></a>平均数为k的最长连续子数组</h3><p>给定n个正整数组成的数组，求平均数正好等于k的最长连续子数组的长度。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">import sys  </span><br><span class="line">def findMaxLength(n, k, a):  </span><br><span class="line">    start = 0  </span><br><span class="line">    end = 0  </span><br><span class="line">    sum = 0  </span><br><span class="line">    count = 0  </span><br><span class="line">    maxLen = 0  </span><br><span class="line">    while end &lt; n:  </span><br><span class="line">        sum += a[end]  </span><br><span class="line">        count += 1  </span><br><span class="line">        avg = sum / count  </span><br><span class="line">        if avg == k:  </span><br><span class="line">            maxLen = max(maxLen, count)  </span><br><span class="line">        while avg &gt; k &amp; count &gt; 1:  </span><br><span class="line">            sum -= a[start]  </span><br><span class="line">            count -= 1</span><br><span class="line">            start += 1  </span><br><span class="line">            avg = sum / count  </span><br><span class="line">            if avg == k:  </span><br><span class="line">                maxLen = max(maxLen, count)    </span><br><span class="line">        end += 1  </span><br><span class="line">    if maxLen &gt; 0:  </span><br><span class="line">        return maxLen  </span><br><span class="line">    else:  </span><br><span class="line">        return -1    </span><br><span class="line">n, k = map(int, input().split())  </span><br><span class="line">a = list(map(int, input().split()))  </span><br><span class="line">print(findMaxLength(n, k, a)) </span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2024/05/09/20240509_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" rel="next" title="计算机图形学数学基础">
+                <i class="fa fa-chevron-left"></i> 计算机图形学数学基础
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2024/06/06/20240606_C-%E5%85%AB%E8%82%A1/" rel="prev" title="C++八股">
+                C++八股 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/custom/jiuzhou.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%94%E8%AF%95%E5%87%86%E5%A4%87"><span class="nav-number">1.</span> <span class="nav-text">笔试准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Step1%EF%BC%9A%E7%86%9F%E6%82%89%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">Step1：熟悉基础语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step2%EF%BC%9A%E6%8C%89%E9%A2%98%E5%9E%8B%E5%88%B7%E9%A2%98%EF%BC%8C%E5%BD%A2%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E6%A8%A1%E6%9D%BF%E5%92%8C%E9%94%99%E9%A2%98%E6%9C%AC"><span class="nav-number">1.2.</span> <span class="nav-text">Step2：按题型刷题，形成自己的模板和错题本</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text">面试准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95"><span class="nav-number">2.1.</span> <span class="nav-text">排序算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hot100"><span class="nav-number">2.2.</span> <span class="nav-text">hot100</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">3.</span> <span class="nav-text">输入输出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BE%8E%E5%9B%A2%E7%BB%8F%E5%85%B8%E9%A2%98"><span class="nav-number">4.</span> <span class="nav-text">美团经典题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9F%A9%E9%98%B5"><span class="nav-number">4.1.</span> <span class="nav-text">矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E7%9A%84%E5%B9%B3%E8%A1%A1%E7%9F%A9%E9%98%B5"><span class="nav-number">4.1.1.</span> <span class="nav-text">小美的平衡矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8F%98%E6%8D%A2"><span class="nav-number">4.1.2.</span> <span class="nav-text">小美的字符串变换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E7%9A%84%E5%A5%BD%E7%9F%A9%E9%98%B5"><span class="nav-number">4.1.3.</span> <span class="nav-text">小美的好矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E7%9A%84%E8%9B%8B%E7%B3%95%E5%88%87%E5%89%B2"><span class="nav-number">4.1.4.</span> <span class="nav-text">小美的蛋糕切割</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">4.2.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E5%BA%A6"><span class="nav-number">4.2.1.</span> <span class="nav-text">小美的字符串匹配度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%91-%E5%9B%BE-%E7%8E%AF"><span class="nav-number">4.3.</span> <span class="nav-text">树&amp;图&amp;环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E7%9A%84%E6%A0%91%E4%B8%8A%E6%9F%93%E8%89%B2"><span class="nav-number">4.3.1.</span> <span class="nav-text">小美的树上染色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E7%9A%84%E6%9C%8B%E5%8F%8B%E5%85%B3%E7%B3%BB"><span class="nav-number">4.3.2.</span> <span class="nav-text">小美的朋友关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E8%B5%B0%E5%85%AC%E8%B7%AF"><span class="nav-number">4.3.3.</span> <span class="nav-text">小美走公路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E7%BB%84"><span class="nav-number">4.4.</span> <span class="nav-text">数组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E7%9A%84%E6%8E%92%E5%88%97%E6%9E%84%E9%80%A0"><span class="nav-number">4.4.1.</span> <span class="nav-text">小美的排列构造</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BE%8E%E7%9A%84%E5%8C%BA%E9%97%B4%E5%88%A0%E9%99%A4"><span class="nav-number">4.4.2.</span> <span class="nav-text">小美的区间删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%B3%E5%9D%87%E6%95%B0%E4%B8%BAk%E7%9A%84%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84"><span class="nav-number">4.4.3.</span> <span class="nav-text">平均数为k的最长连续子数组</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JiuZhouu</span>
+
+  
+</div>
+
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

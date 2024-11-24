@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="项目管理笔记 &amp; PM面试问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="项目管理">
+<meta property="og:url" content="http://example.com/2024/11/23/20241123_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/index.html">
+<meta property="og:site_name" content="个人记录">
+<meta property="og:description" content="项目管理笔记 &amp; PM面试问题">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-11-22T16:50:01.000Z">
+<meta property="article:modified_time" content="2024-11-22T16:52:28.964Z">
+<meta property="article:author" content="JiuZhouu">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/2024/11/23/20241123_项目管理/"/>
+
+
+
+
+
+  <title>项目管理 | 个人记录</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">个人记录</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/23/20241123_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/custom/jiuzhou.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">项目管理</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-11-23T00:50:01+08:00">
+                2024-11-23
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2024-11-23T00:52:28+08:00">
+                2024-11-23
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
+                    <span itemprop="name">项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>项目管理笔记 &amp; PM面试问题</p>
+<span id="more"></span>
+<p>1、管控流程：事前、事中、事后；对接过程，运营过程，售后和回收。<br>流程标准清晰，数据准确。<br>涉及问题：错误信息（可信度、规范审批、系统校验、数据格式），软硬件质量（厂商验收，定期检测），复杂性（求同存异，分而治之），可用性和实现成本（业务分等级），一致性<br>外包研发：需求理解不透彻，转述是否有遗漏，实现方式可扩展、可维护、性能，自测完善，发布遗漏<br>避免新业务定制化开发重复投入研发人力和就业务质量问题频繁救火消耗人力</p>
+<p>2、企业微信自主运作效率<br>8个平台同时发布，多端体验一致，业务、需求规模、时间、质量的平衡，尽力控制风险，最大化利用人力。<br>需求：功能需求，走查需求，统计需求，技术需求<br>需求提出-开发测试-版本上线-项目总结-版本推广<br>把高频、持续、易消耗的事情做成SOP转接出去<br>减少浪费，降低非必要的协作浓度，集中精力做好产品品质。围绕目标不断建设，能自动化的就自动化，用工具减免人与人的交互。</p>
+<p>3、ToB项目思考<br>底层逻辑：为客户带来业务价值，为公司带来商业价值。<br>行业产品经理：将行业场景设计为业务架构，评估腾讯的自研产品能力，能够满足什么样的业务需求，打通逻辑通路。<br>深度思考行业场景<br>（正向）行业政策、招投标项目，当前已产生的存量市场环境，可能会的机会点<br>（反向）产品匹配场景，从头部行业客户落地<br>客户领导高层关注宏观目标，中层关注效益和业务流程，基层关注操作细节</p>
+<p>项目管理的三要素分别是时间、成本和质量。<br>项目管理的五大过程组分别为： 启动过程组、规划过程组、执行过程组、监控过程组、收尾过程组。</p>
+<p>1、项目经理如何雇佣人？ 首先做工作技能描述，了解现有的需求，如果不了解需求很难雇到合适的人， 其次了解团队成员个性，列出团队目前缺乏的工作技能和个性，与人力资源讨论所有现有情况，包括现有人员的调整，当候选人到来针对现有工作进行面试，同时了解候选人是否具备新岗位所需技能<br>2、如何解决团队中的个人 冲突？ 辨别人的个性，分别向员工表述每种风格的价值； 与冲突双方讨论， 持有客观态度，分析冲突原因，<br>3、你如何监控管理顾问 明确工作目标和任务，要求顾问提供周报或日报，根据周报联系任务计划时间来监控。<br>4、如何管理外援？跟外援經理合作，组织日常会议，坚持做工作周报和可交付产品的拷贝<br> 5、如何跟一个总是无法按时完成工作任务的人合作？分析不能完成工作的原因，事情太多&#x2F;管理制度问题&#x2F;能力问题等确定具体原因后，制定对应的解决办法。<br>6、在一个维护项目中如何管理和保证质量？ 维护本身就含有负面意义。许多公司认为维护工作是不好的，第二位的。费钱的，并且是对现有应用的不断修改。必须懂得维护也有它的生命周期。因此，应建立一个围绕维护活动的控制和质量工作的计划。新的开发计划包括交付产品和每个任务分配的时间。项目计划应考虑到需求变更的情况。这样可以使项目经理和用户看到变更对项目进度的影响。<br> 7、你如何在处理雇员关系，项目管理，文本工作之间分配时间？ 人是最宝贵的财富，因此需要花费最多的时间。然而，项目经理必须关注事物的次序应该是：商业目标，公司的目标，项目，团队，个人，技术和方法的变化。<br>8、假如你上任之后，你对你对工作是怎么规划的？ 认识公司，熟悉项目，和项目成员统一项目目标。分解问题解决问题<br>9、你作为项目经理参与研发编码吗？<br>10、假如团队都在加班，你是否觉得应该陪同他们加班？如果出现长期加班的情况你应该如何调节？陪同加班无事可做的情况下是对公司资源的浪费，做好任务分解，根据能力分配好任务，要求项目成员在规定的时间完成自己的工作。 如果长期加班的情况，分情况处理，分析长期加班原因，统一项目战线</p>
+<p>从人和事两个角度展开<br>管理排期，保证如期完成，产出最大化，工作状态、工作能力、性格特质、</p>
+<p>对项目管理的理解<br>如何应对冲突和矛盾<br>团队成员吐槽你是工具人，如何应对<br>项目有哪些阶段<br>做过的项目里的PM承担的角色是什么样的<br>对中台部门如何对接<br>整个游戏研发流程<br>如何设计一个boss关卡落地，怎样分配资源和协调排期，如何识别潜在风险<br>美术同学过程中没有按时完成需求，整个任务优先级上升，如何解决问题<br>如何处理不配合的同事，如何克服反对意见<br>如何组织复盘会<br>平时喜欢玩什么游戏，想做什么类型的游戏项目<br>职业规划是什么样的</p>
+<p>需求拆解 计划制定 计划追踪 团队管理<br>保证需求按一个合理的方式去跟进，了解团队（人员分工）怎么分工更合理，需要发现问题和风险+提前做干预，</p>
+<p>PM现成的方法论：学习能力、理解能力、解决问题的能力、情商、心脏</p>
+<p>自我介绍要文本列出来，排练完整，给面试官一个好的体验。在自我面试中埋钩子，引导面试官提问。<br>为什么做PM 考验意愿度<br>学校项目里遇到过的挑战和复盘，现在回看复盘怎么优化<br>聊缺点  – 学习PMP<br>薪资看市面上校招情况<br>想好了再说，不要立刻回答，整理思路再回答<br>情景题： 新人给老同事不愿意配合，沟通性质的岗位上怎么处理<br>PM的价值是什么，核心竞争力是什么，个人价值如何体现，工作中如何获得成就感</p>
+<p>流畅，自信，自洽</p>
+<p>每个问题不要超过三分钟的回答<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pE411y7Z8/?spm_id_from=333.337.search-card.all.click&vd_source=c943edbe4243fb071636e6d2f03464e8">https://www.bilibili.com/video/BV1pE411y7Z8/?spm_id_from=333.337.search-card.all.click&amp;vd_source=c943edbe4243fb071636e6d2f03464e8</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ep4y1s7vV/?spm_id_from=333.337.search-card.all.click&vd_source=c943edbe4243fb071636e6d2f03464e8">https://www.bilibili.com/video/BV1Ep4y1s7vV/?spm_id_from=333.337.search-card.all.click&amp;vd_source=c943edbe4243fb071636e6d2f03464e8</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1LN411R7Ci/?spm_id_from=333.337.search-card.all.click&vd_source=c943edbe4243fb071636e6d2f03464e8">https://www.bilibili.com/video/BV1LN411R7Ci/?spm_id_from=333.337.search-card.all.click&amp;vd_source=c943edbe4243fb071636e6d2f03464e8</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV15E42157GP/?spm_id_from=333.337.search-card.all.click&vd_source=c943edbe4243fb071636e6d2f03464e8">https://www.bilibili.com/video/BV15E42157GP/?spm_id_from=333.337.search-card.all.click&amp;vd_source=c943edbe4243fb071636e6d2f03464e8</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vu4y1v79n/?spm_id_from=333.337.search-card.all.click&vd_source=c943edbe4243fb071636e6d2f03464e8">https://www.bilibili.com/video/BV1vu4y1v79n/?spm_id_from=333.337.search-card.all.click&amp;vd_source=c943edbe4243fb071636e6d2f03464e8</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ex4y1x7av/?spm_id_from=333.337.search-card.all.click&vd_source=c943edbe4243fb071636e6d2f03464e8">https://www.bilibili.com/video/BV1Ex4y1x7av/?spm_id_from=333.337.search-card.all.click&amp;vd_source=c943edbe4243fb071636e6d2f03464e8</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1u44y127Ff/?spm_id_from=333.337.search-card.all.click&vd_source=c943edbe4243fb071636e6d2f03464e8">https://www.bilibili.com/video/BV1u44y127Ff/?spm_id_from=333.337.search-card.all.click&amp;vd_source=c943edbe4243fb071636e6d2f03464e8</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1rL4y1774Y/?spm_id_from=333.337.search-card.all.click&vd_source=c943edbe4243fb071636e6d2f03464e8">https://www.bilibili.com/video/BV1rL4y1774Y/?spm_id_from=333.337.search-card.all.click&amp;vd_source=c943edbe4243fb071636e6d2f03464e8</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2024/11/23/20241123_%E5%BC%80%E5%8F%91%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1/" rel="next" title="开发面试八股">
+                <i class="fa fa-chevron-left"></i> 开发面试八股
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2024/11/23/%E3%80%8A%E4%BB%A3%E7%A0%81%E4%B9%8B%E4%B8%91%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="prev" title="《代码之丑》读书笔记">
+                《代码之丑》读书笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/custom/jiuzhou.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JiuZhouu</span>
+
+  
+</div>
+
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
